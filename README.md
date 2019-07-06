@@ -1,5 +1,7 @@
 # StockManager
 
+This is stock managing gui program made in pyqt. 
+
 You need following modules
 
 PyQt5
