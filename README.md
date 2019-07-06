@@ -11,4 +11,4 @@ and what you should do to execute this program is
 
 python "Stock Manager.py"
 
-And there is deployed exe file in dist_32bit and dist_64bit directories.
+if you want to make it as exe file, you can do it by pyinstaller
