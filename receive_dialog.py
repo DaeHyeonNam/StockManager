@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file './receive_dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_receive_dialog(object):
+    def setupUi(self, receive_dialog):
+        receive_dialog.setObjectName("receive_dialog")
+        receive_dialog.resize(723, 448)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../../../../Downloads/st_mark_icons/st_mark_iTO_2.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        receive_dialog.setWindowIcon(icon)
+        self.gridLayout = QtWidgets.QGridLayout(receive_dialog)
+        self.gridLayout.setObjectName("gridLayout")
+        self.r_tableWidget = QtWidgets.QTableWidget(receive_dialog)
+        self.r_tableWidget.setObjectName("r_tableWidget")
+        self.r_tableWidget.setColumnCount(7)
+        self.r_tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setFamily("나눔스퀘어 Bold")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.r_tableWidget.setHorizontalHeaderItem(6, item)
+        self.gridLayout.addWidget(self.r_tableWidget, 0, 0, 1, 1)
+
+        self.retranslateUi(receive_dialog)
+        QtCore.QMetaObject.connectSlotsByName(receive_dialog)
+
+    def retranslateUi(self, receive_dialog):
+        _translate = QtCore.QCoreApplication.translate
+        receive_dialog.setWindowTitle(_translate("receive_dialog", "미수금 검색"))
+        item = self.r_tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("receive_dialog", "거래일"))
+        item = self.r_tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("receive_dialog", "품번"))
+        item = self.r_tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("receive_dialog", "품명"))
+        item = self.r_tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("receive_dialog", "갯수"))
+        item = self.r_tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("receive_dialog", "총액"))
+        item = self.r_tableWidget.horizontalHeaderItem(5)
+        item.setText(_translate("receive_dialog", "수금"))
+        item = self.r_tableWidget.horizontalHeaderItem(6)
+        item.setText(_translate("receive_dialog", "수금 여부"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    receive_dialog = QtWidgets.QDialog()
+    ui = Ui_receive_dialog()
+    ui.setupUi(receive_dialog)
+    receive_dialog.show()
+    sys.exit(app.exec_())
+
